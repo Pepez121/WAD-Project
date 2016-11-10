@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Rocky The Shadow</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/script.js" type="text/javascript"> </script>
+</head>
+
+<body>
+	<div id="list">
+		<ul class="logger">
+			<span id="cookieshow"> Logged in as: </span> 
+			<li id="logoutButton" class="loggerbtn"> Logout </li>
+			<li id="loginButton" class="loggerbtn"> Login 	</li>
+			<li id="registerButton" class="loggerbtn"> Register </li>
+		</ul>
+		<ul class="menu">
+			<li><img src="img/logo.jpg" width="80" height="80"></li>
+			<li id="ulInicio" class="menubtn">Inicio</li>
+			<li id="ulCatalogo" class="menubtn">Catálogo</li>
+			<li id="ulContacto" class="menubtn">Contacto</li>
+			<li id="ulAcerca" class="menubtn">Acerca de</li>
+			<li id="ulOrders" class="menubtn">Pedidos</li>
+			<img id="cartButton" src="img/cart.png" class="cart" width ="50" height="50">
+			<a href="https://www.facebook.com/"><img id="facebookButton" src="img/facebook.png" class="face" width ="30" height="30"></a>
+			<a href="https://www.instagram.com/"><img id="instagramButton" src="img/instagram.png" class="insta" width ="30" height="30"></a>
+		</ul>
+	</div>
+	<div class="content">
+		<h2 style="text-align:center"> Los productos son:</h2>
+		<h2 style="text-align:center"> Haz click en las imagenes que quieras agregar al carrito: </h2>
+		<div id="catalogoDiv">
+			<div id="ropa1" class="productos">
+				<img src="img/ropa1.jpg"> 
+				<b>Camisa de cowboys</b>
+				<br>
+				<b> Precio: 50 pesos </b>
+			</div>
+			<div id="ropa2" class="productos">
+				<img src="img/ropa2.jpg">
+				<b>Camisa de cowboys</b>
+				<br>
+				<b> Precio: 50 pesos </b>
+			</div>
+			<div id="ropa3" class="productos">
+				<img src="img/ropa3.jpg">
+				<b>Camisa de cowboys</b>
+				<br>
+				<b> Precio: 50 pesos </b>
+			</div>
+			<div id="ropa4" class="productos">
+				<img src="img/ropa4.jpg">
+				<b>Camisa de cowboys</b>
+				<br>
+				<b> Precio: 50 pesos </b>
+			</div>
+			<div id="juguete1" class="productos">
+				<img src="img/juguete1.jpg">
+			</div>
+			<div id="juguete2" class="productos">
+				<img src="img/juguete2.jpg">
+			</div>
+			<div id="juguete3" class="productos">
+				<img src="img/juguete3.jpg">
+			</div>
+			<div id="juguete4" class="productos">
+				<img src="img/juguete4.jpg">
+			</div>
+			<div id="juguete5" class="productos">
+				<img src="img/juguete5.jpg">
+			</div>
+			<div id="juguete6" class="productos">
+				<img src="img/juguete6.jpg">
+			</div>
+			<div id="juguete7" class="productos">
+				<img src="img/juguete7.jpg">
+			</div>
+			<div id="juguete8" class="productos">
+				<img src="img/juguete8.jpg">
+			</div>
+			<div id="comida1" class="productos">
+				<img src="img/comida1.jpg">
+			</div>
+			<div id="comida2" class="productos">
+				<img src="img/comida2.jpg">
+			</div>
+			<div id="comida3" class="productos">
+				<img src="img/comida3.jpg">
+			</div>
+			<div id="comida4" class="productos">
+				<img src="img/comida4.jpg">
+			</div>
+			<div id="comida5" class="productos">
+				<img src="img/comida5.jpg">
+			</div>
+			<div id="comida6" class="productos">
+				<img src="img/comida6.jpg">
+			</div>
+			<div id="comida7" class="productos">
+				<img src="img/comida7.jpg">
+			</div>
+			<div id="comida8" class="productos">
+				<img src="img/comida8.jpg">
+			</div>
+			<div id="comida9" class="productos">
+				<img src="img/comida9.jpg">
+			</div>
+			<div id="comida10" class="productos">
+				<img src="img/comida10.jpg">
+			</div>
+		</div>
+
+		<div id="contactoDiv">
+			<h2>Contactanos!</h2>
+			<form id="formContacto">
+				<fieldset>
+					<legend> Deja un comentario </legend>
+					<table>
+						<tr>
+							<td> Nombre:</td>
+							<td> <input type="text" id="nombreContacto" placeholder="Escribe tu nombre" /></td>
+						</tr>
+						<tr>
+							<td> Email:</td>
+							<td> <input type="text" id="emailContacto" placeholder="Escribe tu correo" /> </td>
+						</tr>
+						<tr>
+							<td> Comentario:</td>
+							<td> <textarea type="text" id="comentarioContacto"> </textarea> </td>
+						</tr>
+					</table>
+				</br>
+				<input type="submit" id="commentButton" value="Submit"/>
+			</fieldset>
+		</form>
+	</div>
+	<div id="acercaDiv">
+		Algo de Informacion acerca de nosotros
+	</div>
+	<div id="orderDiv">
+		<h3> Tu pedidos han sido los siguientes: </h3>
+	</div>
+	<div id="loginForm">
+		<br> <br>
+		<fieldset>
+			<legend> Log into the system </legend>
+			<p>
+				Username <br/>
+				<input id="usar" class="formElement" type="text" placeholder="Enter username" />
+			</p>
+			<p>
+				Password <br/>
+				<input id="puss" class="formElement" type="password" placeholder="Enter password" />
+			</p>
+			<p>
+				<input type="submit" id="loginphpButton" value="Login"/>
+				<input type="checkbox" id="remember"/> Remember me
+			</p>
+		</fieldset>
+	</div>
+	<div id="registerForm">
+		<br/>
+		<fieldset>
+			<legend>Register into the system</legend>
+
+			<p>
+				Username<br/>
+				<input id="user" class="formElement" type="text" placeholder="Username" />
+			</p>
+			<p>
+				Password<br/>
+				<input id="pass" class="formElement" type="password"
+				placeholder="Password" />
+			</p>
+			<p>
+				First Name<br/>
+				<input id="first" class="formElement" type="text" placeholder="First Name" />
+			</p>
+			<p>
+				Last Name<br/>
+				<input id="last" class="formElement" type="text" placeholder="Last Name" />
+			</p>
+			<p>
+				Email<br/>
+				<input id="ema" class="formElement" type="text" placeholder="Email" />
+			</p>
+
+			<p>
+				<input type="submit" id="registerButtonDiv" value="Register"/>
+			</p>      
+		</fieldset>
+	</div>
+	<div id="carritoDiv">
+		<h2> Este es tu carrito actual: </h2>
+	</div>
+</div>
+</body>
+
+</html>
